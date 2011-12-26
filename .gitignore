@@ -1,0 +1,27 @@
+# build products
+*.build
+build/
+DerivedData/
+
+# xcode noise
+*.pbxuser
+*.mode1
+*.mode1v3
+*.mode2v3
+*.perspective
+*.perspectivev3
+*.xcclassmodel/
+
+*.xcworkspace
+xcuserdata/
+
+
+# old skool
+.svn
+
+# osx noise
+.DS_Store
+profile
+
+# appcode noise
+.idea/

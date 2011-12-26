@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F619042814595EDB008C6F17 /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F619042614595EDB008C6F17 /* MainWindow-iPad.xib */; };
+		F666031A144C42A9003AA51F /* LEManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F6660319144C42A9003AA51F /* LEManager.m */; };
+		F666031D144C45C4003AA51F /* LEUser.m in Sources */ = {isa = PBXBuildFile; fileRef = F666031C144C45C4003AA51F /* LEUser.m */; };
+		F66BCF9214506739003EF384 /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = F66BCF7A14506739003EF384 /* NSObject+SBJson.m */; };
+		F66BCF9314506739003EF384 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F66BCF7D14506739003EF384 /* SBJsonParser.m */; };
+		F66BCF9414506739003EF384 /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F66BCF7F14506739003EF384 /* SBJsonStreamParser.m */; };
+		F66BCF9514506739003EF384 /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = F66BCF8114506739003EF384 /* SBJsonStreamParserAccumulator.m */; };
+		F66BCF9614506739003EF384 /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = F66BCF8314506739003EF384 /* SBJsonStreamParserAdapter.m */; };
+		F66BCF9714506739003EF384 /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = F66BCF8514506739003EF384 /* SBJsonStreamParserState.m */; };
+		F66BCF9814506739003EF384 /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = F66BCF8714506739003EF384 /* SBJsonStreamWriter.m */; };
+		F66BCF9914506739003EF384 /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = F66BCF8914506739003EF384 /* SBJsonStreamWriterAccumulator.m */; };
+		F66BCF9A14506739003EF384 /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = F66BCF8B14506739003EF384 /* SBJsonStreamWriterState.m */; };
+		F66BCF9B14506739003EF384 /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = F66BCF8D14506739003EF384 /* SBJsonTokeniser.m */; };
+		F66BCF9C14506739003EF384 /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = F66BCF8F14506739003EF384 /* SBJsonUTF8Stream.m */; };
+		F66BCF9D14506739003EF384 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = F66BCF9114506739003EF384 /* SBJsonWriter.m */; };
+		F699694D14488C4100C2063B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F699694C14488C4100C2063B /* UIKit.framework */; };
+		F699694F14488C4100C2063B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F699694E14488C4100C2063B /* Foundation.framework */; };
+		F699695114488C4100C2063B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F699695014488C4100C2063B /* CoreGraphics.framework */; };
+		F699695714488C4100C2063B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F699695514488C4100C2063B /* InfoPlist.strings */; };
+		F699695914488C4100C2063B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F699695814488C4100C2063B /* main.m */; };
+		F699695D14488C4100C2063B /* lean_engine_demoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F699695C14488C4100C2063B /* lean_engine_demoAppDelegate.m */; };
+		F699696014488C4200C2063B /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = F699695E14488C4200C2063B /* MainWindow.xib */; };
+		F699696314488C4200C2063B /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F699696214488C4200C2063B /* FirstViewController.m */; };
+		F699696614488C4200C2063B /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F699696514488C4200C2063B /* SecondViewController.m */; };
+		F699696914488C4200C2063B /* FirstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F699696714488C4200C2063B /* FirstView.xib */; };
+		F699696C14488C4200C2063B /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F699696A14488C4200C2063B /* SecondView.xib */; };
+		F699697514488E3C00C2063B /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F699697314488E3C00C2063B /* ThirdViewController.m */; };
+		F699697614488E3C00C2063B /* ThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F699697414488E3C00C2063B /* ThirdViewController.xib */; };
+		F6BF2D98145C239B00DEA99C /* GoogleLogin.png in Resources */ = {isa = PBXBuildFile; fileRef = F6BF2D95145C239B00DEA99C /* GoogleLogin.png */; };
+		F6BF2D99145C239B00DEA99C /* YahooLogin.png in Resources */ = {isa = PBXBuildFile; fileRef = F6BF2D96145C239B00DEA99C /* YahooLogin.png */; };
+		F6BF2D9A145C239B00DEA99C /* FacebookLogin.png in Resources */ = {isa = PBXBuildFile; fileRef = F6BF2D97145C239B00DEA99C /* FacebookLogin.png */; };
+		F6CB490E14583A0A0038CAD5 /* FBDialog.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F6CB490914583A0A0038CAD5 /* FBDialog.bundle */; };
+		F6CB490F14583A0A0038CAD5 /* FBDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = F6CB490B14583A0A0038CAD5 /* FBDialog.m */; };
+		F6CB491014583A0A0038CAD5 /* FBLoginDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = F6CB490D14583A0A0038CAD5 /* FBLoginDialog.m */; };
+		F6F6BAD01449A96A00FFBE2E /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F6F6BACF1449A96A00FFBE2E /* icon.png */; };
+		F6F6BAD31449AB7B00FFBE2E /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6F6BAD21449AB7B00FFBE2E /* icon@2x.png */; };
+		F6F6BAD31449AB7B00FFBE30 /* LERestService.m in Sources */ = {isa = PBXBuildFile; fileRef = F6F6BAD31449AB7B00FFBE2F /* LERestService.m */; };
+		F6F6BAD31449AB7B00FFBE33 /* LEEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = F6F6BAD31449AB7B00FFBE32 /* LEEntity.m */; };
+		F6F6BAD31449AB7B00FFBE36 /* LEError.m in Sources */ = {isa = PBXBuildFile; fileRef = F6F6BAD31449AB7B00FFBE35 /* LEError.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F619042714595EDB008C6F17 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "iPad/en.lproj/MainWindow-iPad.xib"; sourceTree = "<group>"; };
+		F6660318144C42A9003AA51F /* LEManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEManager.h; sourceTree = "<group>"; };
+		F6660319144C42A9003AA51F /* LEManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEManager.m; sourceTree = "<group>"; };
+		F666031B144C45C4003AA51F /* LEUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEUser.h; sourceTree = "<group>"; };
+		F666031C144C45C4003AA51F /* LEUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEUser.m; sourceTree = "<group>"; };
+		F66BCF7814506739003EF384 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		F66BCF7914506739003EF384 /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
+		F66BCF7A14506739003EF384 /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJson.m"; sourceTree = "<group>"; };
+		F66BCF7B14506739003EF384 /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
+		F66BCF7C14506739003EF384 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		F66BCF7D14506739003EF384 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		F66BCF7E14506739003EF384 /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParser.h; sourceTree = "<group>"; };
+		F66BCF7F14506739003EF384 /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParser.m; sourceTree = "<group>"; };
+		F66BCF8014506739003EF384 /* SBJsonStreamParserAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAccumulator.h; sourceTree = "<group>"; };
+		F66BCF8114506739003EF384 /* SBJsonStreamParserAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAccumulator.m; sourceTree = "<group>"; };
+		F66BCF8214506739003EF384 /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
+		F66BCF8314506739003EF384 /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAdapter.m; sourceTree = "<group>"; };
+		F66BCF8414506739003EF384 /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserState.h; sourceTree = "<group>"; };
+		F66BCF8514506739003EF384 /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserState.m; sourceTree = "<group>"; };
+		F66BCF8614506739003EF384 /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		F66BCF8714506739003EF384 /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriter.m; sourceTree = "<group>"; };
+		F66BCF8814506739003EF384 /* SBJsonStreamWriterAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterAccumulator.h; sourceTree = "<group>"; };
+		F66BCF8914506739003EF384 /* SBJsonStreamWriterAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterAccumulator.m; sourceTree = "<group>"; };
+		F66BCF8A14506739003EF384 /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterState.h; sourceTree = "<group>"; };
+		F66BCF8B14506739003EF384 /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterState.m; sourceTree = "<group>"; };
+		F66BCF8C14506739003EF384 /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonTokeniser.h; sourceTree = "<group>"; };
+		F66BCF8D14506739003EF384 /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonTokeniser.m; sourceTree = "<group>"; };
+		F66BCF8E14506739003EF384 /* SBJsonUTF8Stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonUTF8Stream.h; sourceTree = "<group>"; };
+		F66BCF8F14506739003EF384 /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
+		F66BCF9014506739003EF384 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		F66BCF9114506739003EF384 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		F699694814488C4100C2063B /* lean-iphone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "lean-iphone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F699694C14488C4100C2063B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F699694E14488C4100C2063B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F699695014488C4100C2063B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F699695414488C4100C2063B /* lean-iphone-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "lean-iphone-Info.plist"; sourceTree = "<group>"; };
+		F699695614488C4100C2063B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F699695814488C4100C2063B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F699695A14488C4100C2063B /* lean-iphone-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "lean-iphone-Prefix.pch"; sourceTree = "<group>"; };
+		F699695B14488C4100C2063B /* lean_engine_demoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lean_engine_demoAppDelegate.h; sourceTree = "<group>"; };
+		F699695C14488C4100C2063B /* lean_engine_demoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lean_engine_demoAppDelegate.m; sourceTree = "<group>"; };
+		F699695F14488C4200C2063B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		F699696114488C4200C2063B /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		F699696214488C4200C2063B /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		F699696414488C4200C2063B /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		F699696514488C4200C2063B /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		F699696814488C4200C2063B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstView.xib; sourceTree = "<group>"; };
+		F699696B14488C4200C2063B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondView.xib; sourceTree = "<group>"; };
+		F699697214488E3C00C2063B /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		F699697314488E3C00C2063B /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		F699697414488E3C00C2063B /* ThirdViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThirdViewController.xib; sourceTree = "<group>"; };
+		F6BF2D95145C239B00DEA99C /* GoogleLogin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GoogleLogin.png; sourceTree = "<group>"; };
+		F6BF2D96145C239B00DEA99C /* YahooLogin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = YahooLogin.png; sourceTree = "<group>"; };
+		F6BF2D97145C239B00DEA99C /* FacebookLogin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FacebookLogin.png; sourceTree = "<group>"; };
+		F6CB490914583A0A0038CAD5 /* FBDialog.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FBDialog.bundle; sourceTree = "<group>"; };
+		F6CB490A14583A0A0038CAD5 /* FBDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBDialog.h; sourceTree = "<group>"; };
+		F6CB490B14583A0A0038CAD5 /* FBDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBDialog.m; sourceTree = "<group>"; };
+		F6CB490C14583A0A0038CAD5 /* FBLoginDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBLoginDialog.h; sourceTree = "<group>"; };
+		F6CB490D14583A0A0038CAD5 /* FBLoginDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBLoginDialog.m; sourceTree = "<group>"; };
+		F6F6BACF1449A96A00FFBE2E /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		F6F6BAD21449AB7B00FFBE2E /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		F6F6BAD31449AB7B00FFBE2F /* LERestService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LERestService.m; sourceTree = "<group>"; };
+		F6F6BAD31449AB7B00FFBE31 /* LERestService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LERestService.h; sourceTree = "<group>"; };
+		F6F6BAD31449AB7B00FFBE32 /* LEEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEEntity.m; sourceTree = "<group>"; };
+		F6F6BAD31449AB7B00FFBE34 /* LEEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEEntity.h; sourceTree = "<group>"; };
+		F6F6BAD31449AB7B00FFBE35 /* LEError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEError.m; sourceTree = "<group>"; };
+		F6F6BAD31449AB7B00FFBE37 /* LEError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEError.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F699694514488C4100C2063B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F699694D14488C4100C2063B /* UIKit.framework in Frameworks */,
+				F699694F14488C4100C2063B /* Foundation.framework in Frameworks */,
+				F699695114488C4100C2063B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F619042514595ED6008C6F17 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				F619042614595EDB008C6F17 /* MainWindow-iPad.xib */,
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+		F6660316144C4281003AA51F /* LeanEngine */ = {
+			isa = PBXGroup;
+			children = (
+				F6CB4907145839A20038CAD5 /* FacebookLoginDialog */,
+				F6F6BAD31449AB7B00FFBE37 /* LEError.h */,
+				F6F6BAD31449AB7B00FFBE35 /* LEError.m */,
+				F6F6BAD31449AB7B00FFBE34 /* LEEntity.h */,
+				F6F6BAD31449AB7B00FFBE32 /* LEEntity.m */,
+				F6F6BAD31449AB7B00FFBE31 /* LERestService.h */,
+				F6F6BAD31449AB7B00FFBE2F /* LERestService.m */,
+				F66BCF7714506739003EF384 /* JSON */,
+				F6660318144C42A9003AA51F /* LEManager.h */,
+				F6660319144C42A9003AA51F /* LEManager.m */,
+				F666031B144C45C4003AA51F /* LEUser.h */,
+				F666031C144C45C4003AA51F /* LEUser.m */,
+			);
+			name = LeanEngine;
+			sourceTree = "<group>";
+		};
+		F66BCF7714506739003EF384 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				F66BCF7814506739003EF384 /* JSON.h */,
+				F66BCF7914506739003EF384 /* NSObject+SBJson.h */,
+				F66BCF7A14506739003EF384 /* NSObject+SBJson.m */,
+				F66BCF7B14506739003EF384 /* SBJson.h */,
+				F66BCF7C14506739003EF384 /* SBJsonParser.h */,
+				F66BCF7D14506739003EF384 /* SBJsonParser.m */,
+				F66BCF7E14506739003EF384 /* SBJsonStreamParser.h */,
+				F66BCF7F14506739003EF384 /* SBJsonStreamParser.m */,
+				F66BCF8014506739003EF384 /* SBJsonStreamParserAccumulator.h */,
+				F66BCF8114506739003EF384 /* SBJsonStreamParserAccumulator.m */,
+				F66BCF8214506739003EF384 /* SBJsonStreamParserAdapter.h */,
+				F66BCF8314506739003EF384 /* SBJsonStreamParserAdapter.m */,
+				F66BCF8414506739003EF384 /* SBJsonStreamParserState.h */,
+				F66BCF8514506739003EF384 /* SBJsonStreamParserState.m */,
+				F66BCF8614506739003EF384 /* SBJsonStreamWriter.h */,
+				F66BCF8714506739003EF384 /* SBJsonStreamWriter.m */,
+				F66BCF8814506739003EF384 /* SBJsonStreamWriterAccumulator.h */,
+				F66BCF8914506739003EF384 /* SBJsonStreamWriterAccumulator.m */,
+				F66BCF8A14506739003EF384 /* SBJsonStreamWriterState.h */,
+				F66BCF8B14506739003EF384 /* SBJsonStreamWriterState.m */,
+				F66BCF8C14506739003EF384 /* SBJsonTokeniser.h */,
+				F66BCF8D14506739003EF384 /* SBJsonTokeniser.m */,
+				F66BCF8E14506739003EF384 /* SBJsonUTF8Stream.h */,
+				F66BCF8F14506739003EF384 /* SBJsonUTF8Stream.m */,
+				F66BCF9014506739003EF384 /* SBJsonWriter.h */,
+				F66BCF9114506739003EF384 /* SBJsonWriter.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		F699693D14488C4100C2063B = {
+			isa = PBXGroup;
+			children = (
+				F699695214488C4100C2063B /* lean-iphone */,
+				F699694B14488C4100C2063B /* Frameworks */,
+				F699694914488C4100C2063B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F699694914488C4100C2063B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F699694814488C4100C2063B /* lean-iphone.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F699694B14488C4100C2063B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F699694C14488C4100C2063B /* UIKit.framework */,
+				F699694E14488C4100C2063B /* Foundation.framework */,
+				F699695014488C4100C2063B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F699695214488C4100C2063B /* lean-iphone */ = {
+			isa = PBXGroup;
+			children = (
+				F6660316144C4281003AA51F /* LeanEngine */,
+				F6B6564E1448902700D27243 /* Resources */,
+				F619042514595ED6008C6F17 /* iPad */,
+				F699695B14488C4100C2063B /* lean_engine_demoAppDelegate.h */,
+				F699695C14488C4100C2063B /* lean_engine_demoAppDelegate.m */,
+				F699695E14488C4200C2063B /* MainWindow.xib */,
+				F699696114488C4200C2063B /* FirstViewController.h */,
+				F699696214488C4200C2063B /* FirstViewController.m */,
+				F699696414488C4200C2063B /* SecondViewController.h */,
+				F699696514488C4200C2063B /* SecondViewController.m */,
+				F699696714488C4200C2063B /* FirstView.xib */,
+				F699696A14488C4200C2063B /* SecondView.xib */,
+				F699695314488C4100C2063B /* Supporting Files */,
+				F699697214488E3C00C2063B /* ThirdViewController.h */,
+				F699697314488E3C00C2063B /* ThirdViewController.m */,
+				F699697414488E3C00C2063B /* ThirdViewController.xib */,
+			);
+			path = "lean-iphone";
+			sourceTree = "<group>";
+		};
+		F699695314488C4100C2063B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F699695414488C4100C2063B /* lean-iphone-Info.plist */,
+				F699695514488C4100C2063B /* InfoPlist.strings */,
+				F699695814488C4100C2063B /* main.m */,
+				F699695A14488C4100C2063B /* lean-iphone-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F6B6564E1448902700D27243 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F6BF2D95145C239B00DEA99C /* GoogleLogin.png */,
+				F6BF2D96145C239B00DEA99C /* YahooLogin.png */,
+				F6BF2D97145C239B00DEA99C /* FacebookLogin.png */,
+				F6F6BAD21449AB7B00FFBE2E /* icon@2x.png */,
+				F6F6BACF1449A96A00FFBE2E /* icon.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F6CB4907145839A20038CAD5 /* FacebookLoginDialog */ = {
+			isa = PBXGroup;
+			children = (
+				F6CB490914583A0A0038CAD5 /* FBDialog.bundle */,
+				F6CB490A14583A0A0038CAD5 /* FBDialog.h */,
+				F6CB490B14583A0A0038CAD5 /* FBDialog.m */,
+				F6CB490C14583A0A0038CAD5 /* FBLoginDialog.h */,
+				F6CB490D14583A0A0038CAD5 /* FBLoginDialog.m */,
+			);
+			name = FacebookLoginDialog;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F699694714488C4100C2063B /* lean-iphone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F699696F14488C4200C2063B /* Build configuration list for PBXNativeTarget "lean-iphone" */;
+			buildPhases = (
+				F699694414488C4100C2063B /* Sources */,
+				F699694514488C4100C2063B /* Frameworks */,
+				F699694614488C4100C2063B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "lean-iphone";
+			productName = "lean-engine-demo";
+			productReference = F699694814488C4100C2063B /* lean-iphone.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F699693F14488C4100C2063B /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = F699694214488C4100C2063B /* Build configuration list for PBXProject "lean-iphone" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F699693D14488C4100C2063B;
+			productRefGroup = F699694914488C4100C2063B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F699694714488C4100C2063B /* lean-iphone */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F699694614488C4100C2063B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F699695714488C4100C2063B /* InfoPlist.strings in Resources */,
+				F699696014488C4200C2063B /* MainWindow.xib in Resources */,
+				F699696914488C4200C2063B /* FirstView.xib in Resources */,
+				F699696C14488C4200C2063B /* SecondView.xib in Resources */,
+				F699697614488E3C00C2063B /* ThirdViewController.xib in Resources */,
+				F6F6BAD01449A96A00FFBE2E /* icon.png in Resources */,
+				F6F6BAD31449AB7B00FFBE2E /* icon@2x.png in Resources */,
+				F6CB490E14583A0A0038CAD5 /* FBDialog.bundle in Resources */,
+				F619042814595EDB008C6F17 /* MainWindow-iPad.xib in Resources */,
+				F6BF2D98145C239B00DEA99C /* GoogleLogin.png in Resources */,
+				F6BF2D99145C239B00DEA99C /* YahooLogin.png in Resources */,
+				F6BF2D9A145C239B00DEA99C /* FacebookLogin.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F699694414488C4100C2063B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F699695914488C4100C2063B /* main.m in Sources */,
+				F699695D14488C4100C2063B /* lean_engine_demoAppDelegate.m in Sources */,
+				F699696314488C4200C2063B /* FirstViewController.m in Sources */,
+				F699696614488C4200C2063B /* SecondViewController.m in Sources */,
+				F699697514488E3C00C2063B /* ThirdViewController.m in Sources */,
+				F666031A144C42A9003AA51F /* LEManager.m in Sources */,
+				F666031D144C45C4003AA51F /* LEUser.m in Sources */,
+				F66BCF9214506739003EF384 /* NSObject+SBJson.m in Sources */,
+				F66BCF9314506739003EF384 /* SBJsonParser.m in Sources */,
+				F66BCF9414506739003EF384 /* SBJsonStreamParser.m in Sources */,
+				F66BCF9514506739003EF384 /* SBJsonStreamParserAccumulator.m in Sources */,
+				F66BCF9614506739003EF384 /* SBJsonStreamParserAdapter.m in Sources */,
+				F66BCF9714506739003EF384 /* SBJsonStreamParserState.m in Sources */,
+				F66BCF9814506739003EF384 /* SBJsonStreamWriter.m in Sources */,
+				F66BCF9914506739003EF384 /* SBJsonStreamWriterAccumulator.m in Sources */,
+				F66BCF9A14506739003EF384 /* SBJsonStreamWriterState.m in Sources */,
+				F66BCF9B14506739003EF384 /* SBJsonTokeniser.m in Sources */,
+				F66BCF9C14506739003EF384 /* SBJsonUTF8Stream.m in Sources */,
+				F66BCF9D14506739003EF384 /* SBJsonWriter.m in Sources */,
+				F6F6BAD31449AB7B00FFBE30 /* LERestService.m in Sources */,
+				F6F6BAD31449AB7B00FFBE33 /* LEEntity.m in Sources */,
+				F6F6BAD31449AB7B00FFBE36 /* LEError.m in Sources */,
+				F6CB490F14583A0A0038CAD5 /* FBDialog.m in Sources */,
+				F6CB491014583A0A0038CAD5 /* FBLoginDialog.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F619042614595EDB008C6F17 /* MainWindow-iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F619042714595EDB008C6F17 /* en */,
+			);
+			name = "MainWindow-iPad.xib";
+			sourceTree = "<group>";
+		};
+		F699695514488C4100C2063B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F699695614488C4100C2063B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F699695E14488C4200C2063B /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F699695F14488C4200C2063B /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		F699696714488C4200C2063B /* FirstView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F699696814488C4200C2063B /* en */,
+			);
+			name = FirstView.xib;
+			sourceTree = "<group>";
+		};
+		F699696A14488C4200C2063B /* SecondView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F699696B14488C4200C2063B /* en */,
+			);
+			name = SecondView.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F699696D14488C4200C2063B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F699696E14488C4200C2063B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F699697014488C4200C2063B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "lean-iphone/lean-iphone-Prefix.pch";
+				INFOPLIST_FILE = "lean-iphone/lean-iphone-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PRODUCT_NAME = "lean-iphone";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F699697114488C4200C2063B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "lean-iphone/lean-iphone-Prefix.pch";
+				INFOPLIST_FILE = "lean-iphone/lean-iphone-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PRODUCT_NAME = "lean-iphone";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F699694214488C4100C2063B /* Build configuration list for PBXProject "lean-iphone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F699696D14488C4200C2063B /* Debug */,
+				F699696E14488C4200C2063B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F699696F14488C4200C2063B /* Build configuration list for PBXNativeTarget "lean-iphone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F699697014488C4200C2063B /* Debug */,
+				F699697114488C4200C2063B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F699693F14488C4100C2063B /* Project object */;
+}
