@@ -32,3 +32,4 @@ Example client application is licensed under BSD-style license.
 Client library is licensed under LGPL v3.
 
 For more info see License.txt in root directory.
+
