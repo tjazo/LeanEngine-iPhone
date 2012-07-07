@@ -6,19 +6,8 @@
  * All rights reserved.
  */
 
+#import "LEQueryFilter.h"
 
-#import <Foundation/Foundation.h>
-
-@class LEEntity;
-
-
-@interface LERestService : NSObject {
-
-
-}
-
-- (NSArray *)getPrivateEntities:(NSString *)kind;
-
-- (void)putPrivateEntityAsync:(LEEntity *)entity;
+@implementation LEQueryFilter
 
 @end

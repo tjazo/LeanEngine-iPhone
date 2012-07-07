@@ -38,7 +38,7 @@
 
 - (IBAction)downloadData {
     LERestService *restService = [LERestService new];
-    entities = [[NSArray alloc] initWithArray:[restService getPrivateEntitiesAsync]];
+    entities = [[NSArray alloc] initWithArray:[restService getPrivateEntities:nil]];
     NSLog(@"We got: %i entities", entities.count);
     [tableView reloadData];
 //    [restService release];
@@ -73,6 +73,8 @@
 - (NSString *)getEntityPropertiesString:(LEEntity *)entity {
     NSMutableString *sb = [NSMutableString new];
     for (id key in [entity.properties allKeys]) {
+        NSLog(@"We got: %@ ", key);
+
         if (sb.length != 0) {
             [sb appendString:@" | "];
         }

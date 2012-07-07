@@ -11,17 +11,25 @@
 #import "SBJsonParser.h"
 #import "LEManager.h"
 #import "LEEntity.h"
+#import "JSON.h"
 
 
 NSMutableData *receivedData;
 
 @implementation LERestService
 
-- (NSArray *)getPrivateEntitiesAsync {
+- (NSArray *)getPrivateEntities:(NSString *)kind {
     LEManager *leanManager = [LEManager getInstance];
 
     NSMutableString *appUrlString = [[NSMutableString alloc] initWithString:leanManager.hostURL];
-    [appUrlString appendString:@"/rest/v1/entity?lean_token="];
+
+    if (kind == nil) {
+        [appUrlString appendString:@"/rest/v1/entity?lean_token="];
+    } else {
+        [appUrlString appendString:@"/rest/v1/entity/"];
+        [appUrlString appendString:kind];
+        [appUrlString appendString:@"?lean_token="];
+    }
     [appUrlString appendString:leanManager.token];
 
     NSMutableURLRequest *mutableRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:appUrlString]];
@@ -42,6 +50,7 @@ NSMutableData *receivedData;
 
 - (NSMutableArray *)getEntitiesFrom:(NSData *)responseData {
     NSString *stringReply = (NSString *) [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
+    NSLog(stringReply);
 
     SBJsonParser *parser = [[SBJsonParser alloc] init];
     NSError *jsonError;

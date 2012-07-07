@@ -16,11 +16,18 @@
 @synthesize accountId;
 @synthesize properties;
 
-
 - (void)dealloc {
     [kind release];
     [properties release];
     [super dealloc];
+}
+
+- (id)initWithKind:(NSString *)kind {
+    self = [self init];
+    if (self) {
+        self.kind = kind;
+    }
+    return self;
 }
 
 - (NSDictionary *)getEntityData {
@@ -32,5 +39,57 @@
     [entityData setObject:kind forKey:@"_kind"];
     return entityData;
 }
+
+- (NSString *)getStringFor:(NSString *)key {
+    id o = [properties objectForKey:key];
+    if (o != nil && [o class] == [NSString class]) {
+        return o;
+    } else {
+        return nil;
+    }
+}
+
+- (NSString *)getTextFor:(NSString *)key {
+    id o = [properties objectForKey:key];
+//    if (o != nil && [o class] == [LEText class]) {
+//        return o;
+//    } else {
+//        return nil;
+//    }
+}
+
+- (NSNumber *)getLongFor:(NSString *)key {
+    id o = [properties objectForKey:key];
+    if (o != nil && strcmp([o objCType], @encode(long)) == 0) {
+        return o;
+    }
+    return nil;
+}
+
+- (NSNumber *)getDoubleFor:(NSString *)key {
+    id o = [properties objectForKey:key];
+    if (o != nil && strcmp([o objCType], @encode(double)) == 0) {
+        return o;
+    }
+    return nil;
+}
+
+- (NSDate *)getDateFor:(NSString *)key {
+    id o = [properties objectForKey:key];
+    if (o != nil && [o class] == [NSDate class]) {
+        return o;
+    } else {
+        return nil;
+    }
+}
+
+- (NSNumber *)getBooleanFor:(NSString *)key {
+    id o = [properties objectForKey:key];
+    if (o != nil && strcmp([o objCType], @encode(BOOL)) == 0) {
+        return o;
+    }
+    return nil;
+}
+
 
 @end

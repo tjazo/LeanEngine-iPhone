@@ -21,6 +21,20 @@
 @property(nonatomic) long accountId;
 @property(nonatomic, retain) NSDictionary *properties;
 
+- (id)initWithKind:(NSString *)kind;
+
 - (NSDictionary *)getEntityData;
+
+- (NSString *)getStringFor:(NSString *)key;
+
+- (NSString *)getTextFor:(NSString *)key;
+
+- (NSNumber *)getLongFor:(NSString *)key;
+
+- (NSNumber *)getDoubleFor:(NSString *)key;
+
+- (NSDate *)getDateFor:(NSString *)key;
+
+- (NSNumber *)getBooleanFor:(NSString *)key;
 
 @end

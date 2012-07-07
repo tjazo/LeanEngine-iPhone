@@ -21,7 +21,7 @@ static LEManager *instance = nil;
     if (self) {
         NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
         NSString *savedToken = [defaults stringForKey:@"token"];
-        NSLog(@"Saved token: %@", token);
+        NSLog(@"Loading saved token: %@", savedToken);
         if (savedToken) {
             self.token = savedToken;
         }

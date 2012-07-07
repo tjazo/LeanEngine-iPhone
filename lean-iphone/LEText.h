@@ -6,19 +6,11 @@
  * All rights reserved.
  */
 
-
 #import <Foundation/Foundation.h>
 
-@class LEEntity;
+@interface LEText : NSObject
+@property(nonatomic, copy) NSString *value;
 
-
-@interface LERestService : NSObject {
-
-
-}
-
-- (NSArray *)getPrivateEntities:(NSString *)kind;
-
-- (void)putPrivateEntityAsync:(LEEntity *)entity;
+- (id)initWithString:(NSString *)value;
 
 @end

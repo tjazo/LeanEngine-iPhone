@@ -6,19 +6,12 @@
  * All rights reserved.
  */
 
-
 #import <Foundation/Foundation.h>
 
-@class LEEntity;
-
-
-@interface LERestService : NSObject {
-
-
+@interface LEQuery : NSObject {
+    NSString *kind;
 }
+@property(nonatomic, copy) NSString *kind;
 
-- (NSArray *)getPrivateEntities:(NSString *)kind;
-
-- (void)putPrivateEntityAsync:(LEEntity *)entity;
 
 @end
